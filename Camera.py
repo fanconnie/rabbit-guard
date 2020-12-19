@@ -47,3 +47,25 @@ class Camera:
         resp = requests.post(infer_url, data=img_str, headers={
             "Content-Type": "application/x-www-form-urlencoded"
         }, stream=True).json()['predictions']
+
+        rawImg = copy.deepcopy(img)
+        # Draw all predictions
+        respCount = 0
+        for prediction in resp:
+            if prediction["confidence"] > CONFIDENCE_THRESHOLD:
+                respCount += 1
+                self.writeOnStream(prediction['x'], prediction['y'], prediction['width'], prediction['height'],
+                                   prediction['class'],
+                                   img)
+
+        return respCount > 0, img, rawImg, resp
+
+    def getFrame(self):
+        sound, img, rawImg, apiResponse = self.getFrameAnnotations()
+        # Multithread sound
+        if not self.soundCondition and sound:
+            self.soundCondition = True
+            soundThread = Thread(target=self.playSound)
+            soundThread.start()
+
+        # Multithread Active Learning
