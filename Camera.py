@@ -31,3 +31,19 @@ class Camera:
 
     # Frame with annotations
     def getFrameAnnotations(self):
+        success, img = self.video.read()
+        # Rotate Camera Upside down if needed
+        # img = cv2.rotate(img, cv2.ROTATE_180)
+        # Resize (while maintaining the aspect ratio) to improve speed and save bandwidth
+        height, width, channels = img.shape
+        scale = ROBOFLOW_SIZE / max(height, width)
+        img = cv2.resize(img, (round(scale * width), round(scale * height)))
+
+        # Encode image to base64 string
+        retval, buffer = cv2.imencode('.jpg', img)
+        img_str = base64.b64encode(buffer)
+
+        # Get predictions from Roboflow Infer API
+        resp = requests.post(infer_url, data=img_str, headers={
+            "Content-Type": "application/x-www-form-urlencoded"
+        }, stream=True).json()['predictions']
