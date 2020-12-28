@@ -69,3 +69,15 @@ class Camera:
             soundThread.start()
 
         # Multithread Active Learning
+        if not self.uploadCondition and sound:
+            # Do not add blurry images to dataset
+            if cv2.Laplacian(rawImg, cv2.CV_64F).var() > LAPLACIAN_THRESHOLD:
+                self.uploadCondition = True
+                uploadThread = Thread(target=self.activeLearning, args=[rawImg, apiResponse])
+                uploadThread.start()
+
+        return img
+
+    def activeLearning(self, image, apiResponse):
+        success, imageId = self.uploadImage(image)
+        if success:
