@@ -81,3 +81,27 @@ class Camera:
     def activeLearning(self, image, apiResponse):
         success, imageId = self.uploadImage(image)
         if success:
+            self.uploadAnnotation(imageId, apiResponse)
+
+        self.uploadCondition = False
+
+    def playSound(self):
+        '''
+        stream music with mixer.music module in blocking manner
+        this will stream the sound from disk while playing
+        '''
+        clock = pg.time.Clock()
+        pg.mixer.music.play()
+
+        while pg.mixer.music.get_busy():
+            clock.tick(30)
+        self.soundCondition = False
+
+    def uploadImage(self, frame):
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        pilImage = Image.fromarray(frame)
+        # Convert to JPEG Buffer
+        buffered = io.BytesIO()
+        pilImage.save(buffered, quality=90, format="JPEG")
+
+        # Base 64 Encode
