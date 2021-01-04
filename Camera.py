@@ -118,3 +118,22 @@ class Camera:
         data = []
         annotations = []
         for prediction in apiResponse:
+            if prediction["confidence"] < CONFIDENCE_THRESHOLD:
+                continue
+            annotations.append({"label": prediction['class'],
+                                "coordinates": {
+                                    "x": prediction['x'],
+                                    "y": prediction['y'],
+                                    "width": prediction['width'],
+                                    "height": prediction['height']
+                                }})
+        data.append({
+            "image": "rabbit.jpg",
+            "annotations": annotations
+        })
+
+        # Save to Json File
+        with open('activeLearning.json', 'w') as outfile:
+            json.dump(data, outfile)
+
+        annotationFilename = "activeLearning.json"
