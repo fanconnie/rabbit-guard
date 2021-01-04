@@ -105,3 +105,16 @@ class Camera:
         pilImage.save(buffered, quality=90, format="JPEG")
 
         # Base 64 Encode
+        img_str = base64.b64encode(buffered.getvalue())
+        img_str = img_str.decode("ascii")
+
+        r = requests.post(image_upload_url, data=img_str, headers={
+            "Content-Type": "application/x-www-form-urlencoded"
+        })
+        return r.json()['success'], r.json()['id']
+
+    def uploadAnnotation(self, imageId, apiResponse):
+        # CreateML Dataset Format
+        data = []
+        annotations = []
+        for prediction in apiResponse:
