@@ -137,3 +137,19 @@ class Camera:
             json.dump(data, outfile)
 
         annotationFilename = "activeLearning.json"
+
+        # Read Annotation as String
+        annotationStr = open(annotationFilename, "r").read()
+
+        # Construct the URL
+        annotation_upload_url = "".join([
+            "https://api.roboflow.com/dataset/", DATASET_NAME, "/annotate/", imageId,
+            "?api_key=", ROBOFLOW_API_KEY,
+            "&name=", annotationFilename
+        ])
+
+        # POST to the API
+        r = requests.post(annotation_upload_url, data=annotationStr, headers={
+            "Content-Type": "text/plain"
+        })
+        # return r.json()['success']
