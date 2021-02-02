@@ -153,3 +153,18 @@ class Camera:
             "Content-Type": "text/plain"
         })
         # return r.json()['success']
+        return True
+
+    def writeOnStream(self, x, y, width, height, className, frame):
+        # Draw a Rectangle around detected image
+        cv2.rectangle(frame, (int(x - width / 2), int(y + height / 2)), (int(x + width / 2), int(y - height / 2)),
+                      (255, 0, 0), 2)
+
+        # Draw filled box for class name
+        cv2.rectangle(frame, (int(x - width / 2), int(y + height / 2)), (int(x + width / 2), int(y + height / 2) + 35),
+                      (255, 0, 0), cv2.FILLED)
+
+        # Set label font + draw Text
+        font = cv2.FONT_HERSHEY_DUPLEX
+
+        cv2.putText(frame, className, (int(x - width / 2 + 6), int(y + height / 2 + 26)), font, 0.5, (255, 255, 255), 1)
