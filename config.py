@@ -24,3 +24,11 @@ else:
         "?api_key=" + ROBOFLOW_API_KEY,
         "&name=YOUR_IMAGE.jpg"
     ])
+
+# Construct the URL
+image_upload_url = "".join([
+    "https://api.roboflow.com/dataset/", DATASET_NAME, "/upload",
+    "?api_key=", ROBOFLOW_API_KEY,
+    "&name=rabbit.jpg",
+    "&split=train"
+])
