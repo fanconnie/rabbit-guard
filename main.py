@@ -1,4 +1,5 @@
 import os
 import sys
 
-from Camera impor
+from Camera import Camera
+import c
