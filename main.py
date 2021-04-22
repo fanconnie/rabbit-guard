@@ -10,4 +10,5 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.ro
+@app.route('/index')
+d
