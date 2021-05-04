@@ -12,4 +12,4 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def indexPage():
-    return render
+    return render_template('i
