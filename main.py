@@ -15,4 +15,6 @@ def indexPage():
     return render_template('index.html')
 
 
-def gen(camera)
+def gen(camera):
+    while True:
+ 
