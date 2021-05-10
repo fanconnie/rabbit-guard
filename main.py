@@ -17,4 +17,5 @@ def indexPage():
 
 def gen(camera):
     while True:
- 
+        try:
+  
