@@ -18,4 +18,5 @@ def indexPage():
 def gen(camera):
     while True:
         try:
-            frame = c
+            frame = camera.getFrame()
+     
