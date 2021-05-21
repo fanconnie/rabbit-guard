@@ -19,4 +19,4 @@ def gen(camera):
     while True:
         try:
             frame = camera.getFrame()
-            ret, buffer = cv2.
+            ret, buffer = cv2.imencode('.j
