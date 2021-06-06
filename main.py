@@ -20,4 +20,5 @@ def gen(camera):
         try:
             frame = camera.getFrame()
             ret, buffer = cv2.imencode('.jpg', frame)
-            frame = buffer.tobyt
+            frame = buffer.tobytes()
+           
