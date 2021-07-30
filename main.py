@@ -25,4 +25,4 @@ def gen(camera):
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
         except Exception as e:
             exceptionType, exceptionObject, exceptionThrowback = sys.exc_info()
-          
+            fileName =
