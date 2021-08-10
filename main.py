@@ -26,4 +26,4 @@ def gen(camera):
         except Exception as e:
             exceptionType, exceptionObject, exceptionThrowback = sys.exc_info()
             fileName = os.path.split(exceptionThrowback.tb_frame.f_code.co_filename)[1]
-            print(excepti
+            print(exceptionType, fileName, ex
