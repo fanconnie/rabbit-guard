@@ -30,4 +30,5 @@ def gen(camera):
             print(e)
 
 
-@app.route('/vide
+@app.route('/video_feed')
+def video
