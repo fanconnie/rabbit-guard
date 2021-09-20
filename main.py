@@ -30,4 +30,4 @@ def gen(camera):
             print(e)
 
 
-@app.r
+@app.route('/vide
