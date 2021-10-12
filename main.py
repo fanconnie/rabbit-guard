@@ -31,4 +31,5 @@ def gen(camera):
 
 
 @app.route('/video_feed')
-def video
+def video_feed():
+    ret
