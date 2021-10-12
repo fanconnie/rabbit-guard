@@ -32,4 +32,4 @@ def gen(camera):
 
 @app.route('/video_feed')
 def video_feed():
-    ret
+    return Response(ge
