@@ -36,4 +36,4 @@ def video_feed():
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
-if 
+if __name__ == '__
