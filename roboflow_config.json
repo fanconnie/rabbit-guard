@@ -3,4 +3,5 @@
   "ROBOFLOW_API_KEY": "xxxxxxxxxx",
   "ROBOFLOW_MODEL": "xx-name--#",
   "ROBOFLOW_SIZE": 416,
-  "DATASET_NAME": "your-datas
+  "DATASET_NAME": "your-dataset",
+  "LOCAL_S
