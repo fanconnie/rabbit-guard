@@ -4,4 +4,5 @@
   "ROBOFLOW_MODEL": "xx-name--#",
   "ROBOFLOW_SIZE": 416,
   "DATASET_NAME": "your-dataset",
-  "LOCAL_S
+  "LOCAL_SERVER": false,
+  
