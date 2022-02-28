@@ -5,4 +5,4 @@
   "ROBOFLOW_SIZE": 416,
   "DATASET_NAME": "your-dataset",
   "LOCAL_SERVER": false,
-  "LAPLACIAN_THRES
+  "LAPLACIAN_THRESHOLD": 300,
