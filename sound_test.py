@@ -1,2 +1,2 @@
 import sys
-i
+import pygame as p
