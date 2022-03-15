@@ -1,4 +1,7 @@
 import sys
 import pygame as pg
 import os
-impo
+import time
+
+
+def pla
