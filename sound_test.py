@@ -5,4 +5,4 @@ import time
 
 
 def play_sound(sound_file):
-   
+    clock = pg
