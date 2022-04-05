@@ -6,4 +6,6 @@ import time
 
 def play_sound(sound_file):
     clock = pg.time.Clock()
-    try
+    try:
+        pg.mixer.init()
+        
