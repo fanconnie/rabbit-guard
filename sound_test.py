@@ -5,4 +5,5 @@ import time
 
 
 def play_sound(sound_file):
-    clock = pg
+    clock = pg.time.Clock()
+    try
