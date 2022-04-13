@@ -9,4 +9,4 @@ def play_sound(sound_file):
     try:
         pg.mixer.init()
         pg.mixer.music.load(sound_file)
-        print("Musi
+        print("Music file {} loaded!".f
