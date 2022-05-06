@@ -9,4 +9,5 @@ def play_sound(sound_file):
     try:
         pg.mixer.init()
         pg.mixer.music.load(sound_file)
-        print("Music file {} loaded!".format(sound_
+        print("Music file {} loaded!".format(sound_file))
+    except pg
