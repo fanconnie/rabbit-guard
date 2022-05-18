@@ -13,3 +13,5 @@ def play_sound(sound_file):
     except pg.error:
         print("File {} not found! {}".format(sound_file, pg.get_error()))
         return
+
+    pg.mix
