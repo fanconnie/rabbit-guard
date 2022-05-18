@@ -12,3 +12,4 @@ def play_sound(sound_file):
         print("Music file {} loaded!".format(sound_file))
     except pg.error:
         print("File {} not found! {}".format(sound_file, pg.get_error()))
+        return
