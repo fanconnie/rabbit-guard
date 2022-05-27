@@ -20,4 +20,5 @@ def play_sound(sound_file):
         clock.tick(30)
 
 
-if __name__ == '__
+if __name__ == '__main__':
+  
