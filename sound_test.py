@@ -16,4 +16,5 @@ def play_sound(sound_file):
 
     pg.mixer.music.play()
 
-    while pg.mixer.music.get_b
+    while pg.mixer.music.get_busy():
+        c
