@@ -17,4 +17,7 @@ def play_sound(sound_file):
     pg.mixer.music.play()
 
     while pg.mixer.music.get_busy():
-        c
+        clock.tick(30)
+
+
+if 
