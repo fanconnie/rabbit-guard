@@ -21,4 +21,4 @@ def play_sound(sound_file):
 
 
 if __name__ == '__main__':
-    play_sound(os.getcwd
+    play_sound(os.getcwd() + os.sep + 'c
