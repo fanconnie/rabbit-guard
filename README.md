@@ -2,4 +2,4 @@
 
 ## Project Overview
 
-fanconnie presents a sophisticated rabbit deterrence system using computer vision on
+fanconnie presents a sophisticated rabbit deterrence system using computer vision on a Raspberry Pi 
