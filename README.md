@@ -6,4 +6,4 @@ fanconnie presents a sophisticated rabbit deterrence system using computer visio
 
 ## Special Features of the System
 
-This system provides
+This system provides unique feature
