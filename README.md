@@ -8,4 +8,4 @@ fanconnie presents a sophisticated rabbit deterrence system using computer visio
 
 This system provides unique features including:
 
-- Model trainin
+- Model training using Roboflow Trai
