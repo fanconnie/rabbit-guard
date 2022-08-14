@@ -8,4 +8,5 @@ fanconnie presents a sophisticated rabbit deterrence system using computer visio
 
 This system provides unique features including:
 
-- Model training using Roboflow Train (based on YOLOv5, cutting-edge object detection mod
+- Model training using Roboflow Train (based on YOLOv5, cutting-edge object detection model)
+- Portable ope
