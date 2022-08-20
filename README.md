@@ -11,4 +11,5 @@ This system provides unique features including:
 - Model training using Roboflow Train (based on YOLOv5, cutting-edge object detection model)
 - Portable operation with the MakerHawk External Power Supply
 - Active learning via the Roboflow Upload API
-- Remote view of detections through a Flask Web Serv
+- Remote view of detections through a Flask Web Server
+- Bluetooth Spea
