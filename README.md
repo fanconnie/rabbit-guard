@@ -12,4 +12,4 @@ This system provides unique features including:
 - Portable operation with the MakerHawk External Power Supply
 - Active learning via the Roboflow Upload API
 - Remote view of detections through a Flask Web Server
-- Bluetooth Speaker Integra
+- Bluetooth Speaker Integration for rabbit de
