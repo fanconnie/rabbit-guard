@@ -14,4 +14,4 @@ This system provides unique features including:
 - Remote view of detections through a Flask Web Server
 - Bluetooth Speaker Integration for rabbit deterrence
 
-#
+## Materials/S
