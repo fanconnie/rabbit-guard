@@ -15,3 +15,6 @@ This system provides unique features including:
 - Bluetooth Speaker Integration for rabbit deterrence
 
 ## Materials/Software Used
+
+**Hardware:**
+
