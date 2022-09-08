@@ -18,3 +18,5 @@ This system provides unique features including:
 
 **Hardware:**
 
+- Raspberry Pi
+- [Ex
