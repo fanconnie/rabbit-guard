@@ -19,4 +19,4 @@ This system provides unique features including:
 **Hardware:**
 
 - Raspberry Pi
-- [External Power S
+- [External Power Supply](https://www.amazon
