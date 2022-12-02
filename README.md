@@ -19,4 +19,4 @@ This system provides unique features including:
 **Hardware:**
 
 - Raspberry Pi
-- [External Power Supply](https://www.amazon.com/MakerHawk-Raspberry-Uninterruptible-Management-Expans
+- [External Power Supply](https://www.amazon.com/MakerHawk-Raspberry-Uninterruptible-Management-Expansion/dp/B082CVWH3R/
