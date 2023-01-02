@@ -20,4 +20,4 @@ This system provides unique features including:
 
 - Raspberry Pi
 - [External Power Supply](https://www.amazon.com/MakerHawk-Raspberry-Uninterruptible-Management-Expansion/dp/B082CVWH3R/ref=sr_1_6?crid=3LJGHA055O4VL&dchild=1&keywords=battery+for+raspberry+pi&qid=1623698007&sprefix=battery+for+raspbe%2Caps%2C184&sr=8-6)
-- [Camera for the Pi](https://ww
+- [Camera for the Pi](https://www.amazon.com/
