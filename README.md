@@ -32,4 +32,4 @@ This system provides unique features including:
 
 ## Further Information
 
-- Blog
+- Blog: [https://blog.ro
