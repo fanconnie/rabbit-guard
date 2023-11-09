@@ -30,4 +30,6 @@ This system provides unique features including:
 - [Roboflow Train](https://docs.roboflow.com/train)
 - [Roboflow Inference API](https://docs.roboflow.com/inference)
 
-## Further Inform
+## Further Information
+
+- Blog
