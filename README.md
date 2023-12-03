@@ -32,4 +32,4 @@ This system provides unique features including:
 
 ## Further Information
 
-- Blog: [https://blog.ro
+- Blog: [https://blog.roboflow.com/r
