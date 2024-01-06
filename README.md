@@ -33,4 +33,4 @@ This system provides unique features including:
 ## Further Information
 
 - Blog: [https://blog.roboflow.com/rabbit-deterrence-system/](https://blog.roboflow.com/rabbit-deterrence-system/)
-- Video Documentation: [h
+- Video Documentation: [https://www.yout
